@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel ="tests" name="Suite">
+	
+	
+	<listeners>
+		<listener class-name="Common_Methods.Listeners"></listener>
+	</listeners>
+  <test thread-count="5" name="Search Product">
+    <classes>
+      <class name="Learn_to_automate.Demo_1.Homepage_validation"/>
+      <class name="Learn_to_automate.Demo_1.SearchProduct"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

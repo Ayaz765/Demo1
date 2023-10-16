@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Common_Methods.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Search Product(failed)">
+    <classes>
+      <class name="Learn_to_automate.Demo_1.SearchProduct">
+        <methods>
+          <include name="closedriver"/>
+          <include name="Search_product"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- Learn_to_automate.Demo_1.SearchProduct -->
+    </classes>
+  </test> <!-- Search Product(failed) -->
+</suite> <!-- Failed suite [Suite] -->
